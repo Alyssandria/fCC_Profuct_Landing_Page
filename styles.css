@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shrikhand&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -11,10 +13,327 @@
 
 .wrapper{
     width: 100%;
-    height: 100svh;
     background-color: var(--PRIMARY-COLOR);
 }
 
-.site-header{
-    height: 15%;
+.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7*/
+    clip: rect(1px, 1px, 1px, 1px);
 }
+
+@media (prefers-reduced-motion: no-preference){
+    :root{
+        scroll-behavior: smooth;
+    }
+}
+
+/* HEADER STYLES */
+.site-header{
+    height: 15svh;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.company-tagline{
+    font-size: 2.25rem;
+}
+
+.company-name{
+    font-size: 1rem;
+}
+
+
+.nav-links-wrapper{
+    display: none;
+}
+
+/* HERO SECTION STYLES */
+.hero-section{
+    height: 85svh;
+    background-color: var(--PRIMARY-COLOR);
+    background: url("https://github.com/Alyssandria/images_repo/blob/main/hero_bg.png?raw=true") no-repeat center;
+    background-size: cover;
+}
+
+.hero-content{
+    position: relative;
+    margin: auto;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+}
+
+.company-tagline{
+    color: white;
+    font-family: Shrikhand, sans-serif;
+}
+
+.company-subtitle{
+    display: block;
+    font-size: 3rem;
+}
+
+
+.button-wrapper{
+    position: absolute;
+    bottom: 3rem;
+    width: 100%;
+}
+.hero-button{
+    text-decoration: none;
+    margin: auto;
+    color: #BCBCBC;
+    font-family: Poppins, sans-serif;
+}
+
+.dropdown-icon{
+    display: block;
+    margin-top: .5rem;
+    font-size: 1.35rem;
+}
+
+/* OFFERS SECTION STYLES */
+
+.offers-section{
+    width: 100%;
+    padding: 2rem;
+    background-color: white;
+}
+
+.offers-content{
+    display: grid;
+    gap: 2.5rem;
+}
+
+
+.offers-content > .section-header{
+    text-align: center;
+}
+
+.offer-greeting{
+    font-family: Shrikhand, sans-serif;
+    color: var(--PRIMARY-COLOR);
+    font-size: 2rem;
+}
+
+.offer-sub-greeting{
+    font-family: Poppins, sans-serif;
+    color: #6A6A6A;
+    font-size: .8rem;
+}
+
+.video-wrapper{
+    width: 100%;
+}
+
+.youtube-video{
+    width: 100%;
+}
+.offer-cards-wrapper{
+    font-family: Poppins, sans-serif;
+}
+
+.offer-cards{
+    background-color: #EAEAEA;
+    border-radius: 30px;
+    padding: 2em;
+    margin-bottom: 2rem;
+    box-shadow: 9px 10px 4px rgba(0,0,0,25%);
+}
+
+.offer-cards .model-name{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.offer-cards .product-specs-list{
+    margin-left: 1rem;
+    font-size: .9rem;
+    margin-bottom: 2rem;
+}
+
+.offer-button-wrapper{
+    text-align: center;
+}
+
+.offer-button{
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 1rem;
+    background-color:  var(--PRIMARY-COLOR);
+}
+
+.offer-cards-wrapper{
+    margin-bottom: 2rem;
+}
+.offer-icons{
+    width: 100%;
+    color: var(--PRIMARY-COLOR);
+    text-align: center;
+    font-size: .8rem;
+}
+.offer-icons i{
+    margin-bottom: .5rem;
+    font-size: 2rem;
+    display: block;
+}
+
+.offer-icons > div{
+    width: 50%;
+    margin: 1rem auto;
+}
+
+/* SIGNUP SECTION STYLES */
+
+.signup-section{
+    display: grid;
+    gap: 2rem;
+    color: white;
+    width: 100%;
+    background-color: var(--PRIMARY-COLOR);
+    background: url("https://github.com/Alyssandria/images_repo/blob/main/Signup%20BG.png?raw=true") no-repeat center;
+    background-size: cover;
+    padding: 2rem;
+}
+
+.signup-section h2{
+    text-align: center;
+    font-family: Shrikhand, sans-serif;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.signup-section p{
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-size: .8rem;
+    font-style: italic;
+}
+
+.signup-section input{
+    font-family: Poppins, sans-serif;
+}
+
+.signup-section input[type="email"]{
+    display: block;
+    padding: .5rem 1rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.signup-section input[type="submit"]{
+    display: block;
+    margin: auto;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: #2AFC58;
+}
+
+/* FOOTER STYLES */
+footer{
+    font-family: Poppins, sans-serif;
+    color: #BEBEBE;
+    padding: 2rem;
+    text-align: center;
+    font-size: .8rem;
+}
+
+footer .logo{
+    margin-bottom: 1rem;
+}
+
+
+
+/* MEDIA QUERIES */
+
+/* MOBILE TO TABLETS */ 
+@media (min-width: 23rem){
+    .youtube-video{
+        height: 320px;
+        max-width: 569px;
+    }
+    .video-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (min-width: 25rem){
+    .offer-icons{
+        display: flex;
+        font-size: 1rem;
+        max-width: 680px;
+        margin: auto;
+    }
+
+    .offer-cards li{
+        font-size: 1rem;
+    }
+
+    .offer-cards h3{
+        font-size: 1.5rem;
+    }
+
+    .header-subtitle{
+        font-size: 1rem;
+    }
+
+    .offer-greeting{
+        font-size: 3rem;
+    }
+    .offer-sub-greeting{
+        font-size: 1.5rem;
+    }
+
+    .company-subtitle{
+        font-size: 4.5rem;
+    }
+
+    .company-name{
+        font-size: 1.5rem;
+    }
+
+    .button-wrapper{
+        font-size: 1.25rem;
+    }
+
+    .offer-cards{
+        max-width: 540px;
+        margin: 4rem auto;
+    }
+}
+
+@media (min-width: 39rem){
+    .signup-section input[type="submit"]{
+        margin: unset;
+    }
+    .signup-section input[type="email"]{
+        margin: unset;
+        width: 70%;
+    }
+    form{
+        justify-content: space-around;
+        align-items: center;
+        display: flex;
+    }
+}
+/**/
+

@@ -10,11 +10,126 @@
 </head>
 <body>
     <div class="wrapper">
-        <header class="site-header">
+        <header class="site-header" id="header">
+            <div class="logo" aria-label="Logo" >
+                <img src="https://github.com/Alyssandria/images_repo/blob/main/Logo.png?raw=true" alt="Stride Logo" id="header-img">
+            </div>
+
+            <nav class="nav-bar" id="nav-bar">
+                <ul class="nav-links-wrapper">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#offers" class="nav-link">Offers</a></li>
+                    <li><a href="#signup" class="nav-link">Pre-Order</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main">
+            <section class="hero-section" id="home">
+                <div class="hero-content">
+                    <header class="section-header">
+                        <h1 class="company-tagline"><span class="company-name">Stride</span> <span class="company-subtitle">Designed for <span class="subtitle-indent">the Daring</span></span></h1>
+                    </header>
+                    
+                    <div class="button-wrapper">
+                        <a href="#offers" class="hero-button" role="button">
+                            View Offers
+                            <i class="fa-solid fa-caret-down dropdown-icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="offers-section" id="offers">
+                <div class="offers-content">
+                    <header class="section-header">
+                        <h2 class="offer-greeting">Gearing up for Adventure</h2>
+                        <div class="offer-sub-greeting">Coming summer '25</div>
+                    </header>
+
+                    <div class="video-wrapper">
+                        <iframe class="youtube-video" id="video"src="https://www.youtube.com/embed/QgFuis2_-Fc?si=D4-bbcXu9fFfzZ8o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="offer-cards-wrapper">
+                        <div class="offer-cards">
+                            <div class="eagle-x1-product">
+                                <h3 class="model-name">Eagle X1 Mountain Vroom</h3>
+                                <ul class="product-specs-list">
+                                    <li>Lightweight carbon frame</li>
+                                    <li>Shimano XTR 12-speed drivetrain</li>
+                                    <li>Hydraulic disc brakes</li>
+                                    <li>Suspension travel: 160mm (front & rear)</li>
+                                    <li>Tire size: 29 x 2.5"</li>
+                                </ul>
+                                <div class="offer-button-wrapper"><a href="#signup" class="offer-button">Pre-Order</a></div>
+                            </div>
+                        </div>
+
+                        <div class="offer-cards">
+                            <div class="falcon-s1-product">
+                                <h3 class="model-name">Falcon S1 Road Racer</h3>
+                                <ul class="product-specs-list">
+                                    <li>Lightweight aluminum frame</li>
+                                    <li>Shimano Ultegra 11-speed drivetrain</li>
+                                    <li>Rim brakes</li>
+                                    <li>Frame geometry: race-oriented</li>
+                                    <li>Tire size: 700c x 28mm</li>
+                                </ul>
+                                <div class="offer-button-wrapper"><a href="#signup" class="offer-button">Pre-Order</a></div>
+                            </div>
+                        </div>
+
+                        <div class="offer-cards">
+                            <div class="swift-c1-product">
+                                <h3 class="model-name">Swift C1 Fixie Freedom</h3>
+                                <ul class="product-specs-list">
+                                    <li>Aluminum frame</li>
+                                    <li>Single-speed drivetrain</li>
+                                    <li>Fixed gear or freewheel options</li>
+                                    <li>Hydraulic disc brakes</li>
+                                    <li>Tire size: 700c x 35mm</li>
+                                </ul>
+                                <div class="offer-button-wrapper"><a href="#signup" class="offer-button">Pre-Order</a></div>
+                            </div>
+                        </div>
+
+                        <div class="offer-icons">
+                            <div class="delivery">
+                                <i class="fa-solid fa-truck-fast"></i>
+                                Fast Delivery
+                            </div>
+                            <div class="support">
+                                <i class="fa-solid fa-headset"></i>
+                                24/7 Customer Support
+                            </div>
+                            <div class="delivery">
+                                <i class="fa-solid fa-users"></i>
+                                Reliable, Recommended By Many
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="signup-section" id="signup">
+                <header class="section-header">
+                    <h2>Be the First to the Experience</h2>
+                    <p class="header-subtitle">Join Our Early Access List for Exclusive Updates!</p>
+                </header>
+                <form action="https://www.freecodecamp.com/email-submit" id="form">
+                    <label for="email" class="sr-only">Enter your Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email"/>
+                    <input type="submit" value="JOIN NOW!" id="submit">
+                </form>
+            </section>
+        </main>
+        <footer>
             <div class="logo" aria-label="Logo">
                 <img src="https://github.com/Alyssandria/images_repo/blob/main/Logo.png?raw=true" alt="Stride Logo">
             </div>
-        </header>
+            <div class="copy" >&copy 2024</div>
+        </footer>
     </div>
 </body>
 </html>
