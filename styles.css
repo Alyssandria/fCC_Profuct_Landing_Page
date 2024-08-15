@@ -132,6 +132,7 @@
 
 .offers-content > .section-header{
     text-align: center;
+    margin-bottom: 2rem;
 }
 
 .offer-greeting{
@@ -266,7 +267,10 @@
     border: none;
     border-radius: 10px;
     background-color: #2AFC58;
+    transition: .2s all ease-in-out;
+    cursor: pointer;
 }
+
 
 /* FOOTER STYLES */
 footer{
@@ -299,6 +303,11 @@ footer .logo{
 
 .nav-links-wrapper li:last-child:hover{
    transform: translateY(-5px);
+}
+
+.signup-section input[type="submit"]:hover{
+    background-color: #6df78b;
+    transform: translateY(5px);
 }
 
 
