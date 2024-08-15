@@ -33,7 +33,18 @@
 
 /* HEADER STYLES */
 .site-header{
+    position: sticky;
+    top: 0;
+    background-color: var(--PRIMARY-COLOR);
+    z-index: 1;
     height: 15svh;
+}
+
+.header-contents-wrapper{
+    width: 100%;
+    height: 100%;
+    max-width: 1350px;
+    margin: auto;
 }
 
 .logo{
@@ -52,7 +63,7 @@
 }
 
 
-.nav-links-wrapper{
+.nav-bar{
     display: none;
 }
 
@@ -108,13 +119,14 @@
 
 .offers-section{
     width: 100%;
-    padding: 2rem;
+    padding: 3rem 2rem;
     background-color: white;
 }
 
 .offers-content{
-    display: grid;
+    max-width: 1350px;
     gap: 2.5rem;
+    margin: auto;
 }
 
 
@@ -136,6 +148,7 @@
 
 .video-wrapper{
     width: 100%;
+    margin-bottom: 2rem;
 }
 
 .youtube-video{
@@ -146,6 +159,8 @@
 }
 
 .offer-cards{
+    transition: .2s all ease-in;
+    cursor: pointer;
     background-color: #EAEAEA;
     border-radius: 30px;
     padding: 2em;
@@ -182,6 +197,7 @@
     margin-bottom: 2rem;
 }
 .offer-icons{
+    font-family: Poppins, sans-serif;
     width: 100%;
     color: var(--PRIMARY-COLOR);
     text-align: center;
@@ -201,12 +217,17 @@
 /* SIGNUP SECTION STYLES */
 
 .signup-section{
+    width: 100%;
+    background-color: var(--PRIMARY-COLOR);
+    background: url("https://github.com/Alyssandria/images_repo/blob/main/Signup%20BG.png?raw=true") no-repeat;
+    background-size: cover;
+}
+
+.signup-section .signup-content{
     display: grid;
     gap: 2rem;
     color: white;
     width: 100%;
-    background-color: var(--PRIMARY-COLOR);
-    background: url("https://github.com/Alyssandria/images_repo/blob/main/Signup%20BG.png?raw=true") no-repeat center;
     background-size: cover;
     padding: 2rem;
 }
@@ -258,6 +279,26 @@ footer{
 
 footer .logo{
     margin-bottom: 1rem;
+}
+
+/* HOVER STYLES */
+
+.offer-cards:hover{
+    transform: scale(1.05);
+}
+
+.offer-button-wrapper:hover a{
+    background-color: #838383;
+}
+
+.nav-links-wrapper li:not(:last-child):hover a{
+    padding: 0.5rem;
+    background-color: #4b4b4b;
+    text-decoration: underline;
+}
+
+.nav-links-wrapper li:last-child:hover{
+   transform: translateY(-5px);
 }
 
 
@@ -335,5 +376,81 @@ footer .logo{
         display: flex;
     }
 }
-/**/
+
+
+/* Laptop - Deesktop Styles */
+@media (min-width: 48rem){
+    .offer-cards-wrapper{
+        gap: 1rem;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .offer-cards{
+        margin: 2rem;
+    }
+
+    .signup-section .signup-content{
+        margin: auto;
+        max-width: 1350px;
+        justify-content: space-around;
+        align-items: center;
+        display: flex;
+    }
+
+    form{
+        width: 50%;
+    }
+
+    .nav-bar{
+        display: block;
+        width: 30%;
+
+    }
+
+    .nav-bar .nav-links-wrapper{
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        text-decoration: none;
+    }
+
+    .nav-links-wrapper li{
+        transition: .2s all ease-in-out;
+    }
+    .nav-bar .nav-links-wrapper a{
+        transition: .2s all ease-in-out;
+        font-family: Poppins, sans-serif;
+        color: white;
+        font-size: .8rem;
+        text-decoration: none;
+
+    }
+
+    .nav-link-btn{
+        padding: .5rem;
+        border-radius: 10px;
+        color: #202020 !important;
+        font-weight: bold;
+        background-color: #2AFC58;
+    }
+
+    .site-header .header-contents-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2rem;
+    }
+
+    .signup-section h2{
+        text-align: left;
+    }
+
+    .signup-section p{
+        text-align: left;
+    }
+
+
+}
 

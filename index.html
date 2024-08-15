@@ -11,17 +11,18 @@
 <body>
     <div class="wrapper">
         <header class="site-header" id="header">
-            <div class="logo" aria-label="Logo" >
-                <img src="https://github.com/Alyssandria/images_repo/blob/main/Logo.png?raw=true" alt="Stride Logo" id="header-img">
+            <div class="header-contents-wrapper">
+                <div class="logo" aria-label="Logo" >
+                    <img src="https://github.com/Alyssandria/images_repo/blob/main/Logo.png?raw=true" alt="Stride Logo" id="header-img">
+                </div>
+                <nav class="nav-bar" id="nav-bar">
+                    <ul class="nav-links-wrapper">
+                        <li><a href="#home" class="nav-link">Home</a></li>
+                        <li><a href="#offers" class="nav-link">Offers</a></li>
+                        <li><a href="#signup" class="nav-link nav-link-btn">Pre-Order</a></li>
+                    </ul>
+                </nav>
             </div>
-
-            <nav class="nav-bar" id="nav-bar">
-                <ul class="nav-links-wrapper">
-                    <li><a href="#home" class="nav-link">Home</a></li>
-                    <li><a href="#offers" class="nav-link">Offers</a></li>
-                    <li><a href="#signup" class="nav-link">Pre-Order</a></li>
-                </ul>
-            </nav>
         </header>
 
         <main class="main">
@@ -93,35 +94,38 @@
                                 <div class="offer-button-wrapper"><a href="#signup" class="offer-button">Pre-Order</a></div>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="offer-icons">
-                            <div class="delivery">
-                                <i class="fa-solid fa-truck-fast"></i>
-                                Fast Delivery
-                            </div>
-                            <div class="support">
-                                <i class="fa-solid fa-headset"></i>
-                                24/7 Customer Support
-                            </div>
-                            <div class="delivery">
-                                <i class="fa-solid fa-users"></i>
-                                Reliable, Recommended By Many
-                            </div>
+                    <div class="offer-icons">
+                        <div class="delivery">
+                            <i class="fa-solid fa-truck-fast"></i>
+                            Fast Delivery
                         </div>
+                        <div class="support">
+                            <i class="fa-solid fa-headset"></i>
+                            24/7 Customer Support
+                        </div>
+                        <div class="delivery">
+                            <i class="fa-solid fa-users"></i>
+                            Reliable, Recommended By Many
+                    </div>
+
                     </div>
                 </div>
             </section>
 
             <section class="signup-section" id="signup">
-                <header class="section-header">
-                    <h2>Be the First to the Experience</h2>
-                    <p class="header-subtitle">Join Our Early Access List for Exclusive Updates!</p>
-                </header>
-                <form action="https://www.freecodecamp.com/email-submit" id="form">
-                    <label for="email" class="sr-only">Enter your Email</label>
-                    <input type="email" name="email" id="email" placeholder="Enter your email"/>
-                    <input type="submit" value="JOIN NOW!" id="submit">
-                </form>
+                <div class="signup-content">
+                    <header class="section-header">
+                        <h2>Be the First to the Experience</h2>
+                        <p class="header-subtitle">Join Our Early Access List for Exclusive Updates!</p>
+                    </header>
+                    <form action="https://www.freecodecamp.com/email-submit" id="form">
+                        <label for="email" class="sr-only">Enter your Email</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email" required/>
+                        <input type="submit" value="JOIN NOW!" id="submit">
+                    </form>
+                </div>
             </section>
         </main>
         <footer>
